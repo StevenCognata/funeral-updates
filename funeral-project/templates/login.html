@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo">
+      <form class="form" method="POST">
+        <h2>Admin Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Log in</button>
+        <div class="or">
+          <span>A. Azzara Funeral Home</span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

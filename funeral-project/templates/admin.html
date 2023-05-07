@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/admin.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Admin</h1>
+        <form method="POST">
+          <label for="name">Name of deceased:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="church">Church:</label>
+          <input type="text" id="church" name="church"><br>
+          <label for="church-time">Time of church service:</label>
+          <input type="time" id="church-time" name="church-time"><br>
+          <label for="cemetery">Cemetery:</label>
+          <input type="text" id="cemetery" name="cemetery"><br>
+          <label for="cemetery-time">Time of cemetery service:</label>
+          <input type="time" id="cemetery-time" name="cemetery-time"><br>
+          <button type="submit">Update information</button>
+        </form>
+        <hr>
+        <a href="/">Return to main</a>
+      </div>
+    </div>
+  </body>
+</html>

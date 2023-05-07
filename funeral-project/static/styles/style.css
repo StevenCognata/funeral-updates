@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://i.imgur.com/Mr9rWkK.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url('https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png');
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Form styling */
+.phone-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+.phone-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.phone-form p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.phone-form label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.phone-form input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.phone-form input[type="text"] {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.phone-form button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #001d3d;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.phone-form button:hover {
+  background-color: #fff;
+  color: #001d3d;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Admin sign in link styling */
+.admin-link {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+}

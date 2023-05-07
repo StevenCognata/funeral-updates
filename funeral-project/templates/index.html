@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Funeral Updates</h1>
+      </div>
+      <form method="POST" class="phone-form">
+        <h2>Enter Your Phone Number</h2>
+        <p>To receive updates about the funeral.</p>
+        <label for="phone">Phone number:</label>
+        <input type="text" id="phone" name="phone"><br>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="admin-link">
+        <a href="/login">Admin sign in</a>
+      </div>
+    </div>
+  </body>
+</html>
